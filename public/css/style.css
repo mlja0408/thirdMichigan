@@ -1,0 +1,28 @@
+/*Shared Elements*/
+h1 {
+    text-align: center;
+}
+nav {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+main {
+    width: 90%;
+    margin: auto;
+}
+header {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: auto;
+}
+/*index.html*/
+#mainContent {
+    width: 80%;
+    float: left;
+}
+aside {
+    width: 20%;
+    float: left;
+}
