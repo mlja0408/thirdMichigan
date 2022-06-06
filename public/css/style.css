@@ -26,3 +26,25 @@ aside {
     width: 20%;
     float: left;
 }
+/*enlist.html*/
+.column {
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.containerTab {
+    padding: 20px;
+    color: #FFFFFF;
+}
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
