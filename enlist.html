@@ -36,12 +36,12 @@
         </header>
         <h2>Enlist in the Gallant 3<sup>rd</sup> Michigan Infantry</h2>
         <div class="row">
-            <div class="column" onClick="openTab('b1');" style="background: #4CAF50;">General</div>
-            <div class="column" onClick="openTab('b2');" style="background: #2196F3;">Military</div>
-            <div class="column" onClick="openTab('b3');" style="background: #F44336;">Civilian</div>
+            <div class="column" id="general" onClick="openTab('e1');">General</div>
+            <div class="column" id="military" onClick="openTab('e2');">Military</div>
+            <div class="column" id="civilian" onClick="openTab('e3');">Civilian</div>
         </div>
 
-        <div id="b1" class="containerTab" style="display: none; background: #4CAF50;">
+        <div id="e1" class="containerTab">
             <span onClick="this.parentElement.style.display='none'" class="closebtn">&times</span>
             <h2>General</h2>
             <p>
@@ -76,7 +76,7 @@
                 A: You can contact the 3rd’s commanding officer by emailing <a href="mailto:floydh3mvi@gmail.com">floydh3mvi@gmail.com</a>, or for more specifics on the management of the 3rd Michigan, read our <a href="./public/files/3rd Michigan Operating Manual.pdf" target="_blank">Operating Manual</a>!
             </p>
         </div>
-        <div id="b2" class="containerTab" style="display: none; background: #2196F3;">
+        <div id="e2" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">&times</span>
             <h2>Military</h2>
             <p>
@@ -91,7 +91,7 @@
                 A: Drill will be taught to a new reenactor at events. Don’t be afraid of making mistakes! During the Civil War, a new recruit who was assigned to an already existing unit would have to go though the same things and would make just as many mistakes as a new recruit will. However, if you would like to get a head start, feel free to glance though Casey’s Tactics.
             </p>
         </div>
-        <div id="b3" class="containerTab" style="display: none; background: #F44336">
+        <div id="e3" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">&times</span>
             <h2>Civilian</h2>
             <p>

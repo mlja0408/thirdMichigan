@@ -48,3 +48,36 @@ aside {
     font-size: 35px;
     cursor: pointer;
 }
+#general {
+    background-color: #4CAF50;
+}
+#e1 {
+    background-color: #4CAF50;
+    display: none;
+}
+#military {
+    background-color: #2196F3;
+}
+#e2 {
+    background-color: #2196F3;
+    display: none;
+}
+#civilian {
+    background-color: #F44336;
+}
+#e3 {
+    background-color: #F44336;
+    display: none;
+}
+@media screen and (max-width: 675px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+}
+/*movements.html*/
+/*#movements {
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}*/
