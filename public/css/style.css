@@ -27,52 +27,40 @@ aside {
     float: left;
 }
 /*enlist.html*/
-.column {
-    padding: 50px;
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
-    color: #FFFFFF;
-}
-.row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.containerTab {
-    padding: 20px;
-    color: #FFFFFF;
-}
-.closebtn {
-    float: right;
+.collapsible {
+    background-color: #777;
     color: white;
-    font-size: 35px;
     cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
 }
-#general {
-    background-color: #4CAF50;
-}
-#e1 {
-    background-color: #4CAF50;
-    display: none;
-}
-#military {
-    background-color: #2196F3;
-}
-#e2 {
-    background-color: #2196F3;
-    display: none;
-}
-#civilian {
-    background-color: #F44336;
-}
-#e3 {
-    background-color: #F44336;
-    display: none;
-}
-@media screen and (max-width: 675px) {
-    .row {
-        grid-template-columns: 1fr;
+
+    .active, .collapsible:hover {
+        background-color: #555;
     }
+
+    .collapsible:after {
+        content: '\002B';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
 }
 /*movements.html*/
 /*#movements {
