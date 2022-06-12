@@ -81,3 +81,13 @@ aside {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }*/
+/*photographs.html*/
+#historicalPhotograps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.histPhoto {
+    padding: 0 5px;
+}
