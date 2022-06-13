@@ -76,6 +76,10 @@ aside {
     justify-items: center;
     align-items: center;
 }
-.histPhoto {
-    padding: 0 5px;
+/*gallery.html*/
+#photoGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
