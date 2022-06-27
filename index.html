@@ -13,7 +13,7 @@
 <body>
     <main>
         <header>
-            <h1>Third Michigan Infantry Company D</h1>
+            <h1><a class="title" href="./index.html">Third Michigan Infantry Company D</a></h1>
             <nav>
                 <div id="home">
                     <p><a href="./index.html">Home</a></p>
@@ -21,11 +21,16 @@
                 <div id="enlist">
                     <p><a href="./enlist.html">Enlist</a></p>
                 </div>
-                <div id="gallery">
-                    <p><a href="./gallery.html">Gallery</a></p>
+                <div id="gallery" class="dropdown">
+                    <p><a href="gallery.html">Gallery</a></p>
+                    <div class="dropdownContent"><p><a href="./gallery.html">Reenactment Gallery</a></p></div>
+                    <div class="dropdownContent"><p><a href="./photographs.html">Historical Gallery</a></p></div>
                 </div>
-                <div id="history">
+                <div id="history" class="dropdown">
                     <p><a href="./history.html">History</a></p>
+                    <div class="dropdownContent"><p><a href="./history.html">History of the 3<sup>rd</sup></a></p></div>
+                    <div class="dropdownContent"><p><a href="./movements.html">Historical Movements</a></p></div>
+                    <div class="dropdownContent"><p><a href="./organization.html">Organization</a></p></div>
                 </div>
                 <div id="contact">
                     <p><a href="./contact.html">Contact Us</a></p>
@@ -33,7 +38,7 @@
             </nav>
         </header>
         <section id="mainContent">
-            <img src="./public/images/4-im-HomePictures-1698.png">
+            <img src="./public/images/4-im-HomePictures-1698.png" id="frontPicture">
             <h2>Welcome to our barracks!</h2>
             <p>Welcome to the website for the 3rd Michigan Infantry Company D, a family friendly Civil War reenacting unit under the <a href="https://www.wcwa.net" target="_blank">Washington Civil War Association (WCWA)</a>. Though we are based in the Spokane
                 area, we contain members from all across the Northwest. We strive to honor the soldiers, civilians, and families of the Civil War by reproducing their everyday accomplishments, sacrifices, and daily activities at our reenactments and living
