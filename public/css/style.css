@@ -52,6 +52,10 @@ a:visited {
 .title:visited {
     color: #000000;
 }
+html {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+}
 /*index.html*/
 #mainContent {
     width: 80%;
