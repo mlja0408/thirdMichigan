@@ -1,4 +1,7 @@
 /*Shared Elements*/
+body {
+    background: #969696;
+}
 h1 {
     text-align: center;
 }
@@ -16,6 +19,8 @@ header {
     justify-content: space-evenly;
     flex-direction: column;
     margin: auto;
+    /*background: #AAAAAA;*/
+    /*border-radius: 5px;*/  
 }
 .dropdown {
     text-align: center;
