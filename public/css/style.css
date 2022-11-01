@@ -65,7 +65,6 @@ html {
 #mainContent {
     width: 80%;
     float: left;
-
 }
 aside {
     width: 20%;
@@ -73,6 +72,9 @@ aside {
 }
 #frontPicture {
     z-index: 0;
+}
+footer {
+    float: none;
 }
 /*enlist.html*/
 details {
