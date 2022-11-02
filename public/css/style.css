@@ -62,19 +62,15 @@ html {
     margin-right: calc(-1 * (100vw - 100%));
 }
 /*index.html*/
-#mainContent {
-    width: 80%;
-    float: left;
-}
-aside {
-    width: 20%;
-    float: left;
+#mainPageContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 #frontPicture {
     z-index: 0;
 }
 footer {
-    float: none;
+    text-align: center;
 }
 /*enlist.html*/
 details {
