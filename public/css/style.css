@@ -61,6 +61,18 @@ html {
     overflow-x: hidden;
     margin-right: calc(-1 * (100vw - 100%));
 }
+@font-face {
+    font-family: "Comic Helvetic Light";
+    src: url("./public/fonts/comic_helvetic/ComicHelvetic_Light.otf");
+}
+@font-face {
+    font-family: "Comic Helvetic Medium";
+    src: url("./public/fonts/comic_helvetic/ComicHelvetic_Medium.otf");
+}
+@font-face {
+    font-family: "Comic Helvetic Heavy";
+    src: url("./public/fonts/comic_helvetic/ComicHelvetic_Heavy.otf");
+}
 /*index.html*/
 #mainPageContent {
     display: grid;
