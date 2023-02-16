@@ -7,6 +7,7 @@
     <title>Historical Photographs - Third Michigan Volunteer Infantry Company D</title>
     <link rel="shortcut icon" href="./public/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./public/css/style.css">
+    <script src="./public/js/photos.js" type="text/javascript"></script>
 </head>
 <body>
     <main>
@@ -20,15 +21,19 @@
                     <p><a href="./enlist.html">Enlist</a></p>
                 </div>
                 <div id="gallery" class="dropdown">
-                    <p><a href="gallery.html">Gallery</a></p>
-                    <div class="dropdownContent"><p><a href="./gallery.html">Reenactment Gallery</a></p></div>
-                    <div class="dropdownContent"><p><a href="./photographs.html">Historical Gallery</a></p></div>
+                    <p class="dropbtn"><a href="gallery.html">Gallery</a></p>
+                    <div class="dropdown-content">
+                        <a href="./gallery.html">Reenactment Gallery</a>
+                        <a href="./photographs.html">Historical Gallery</a>
+                    </div>
                 </div>
-                <div id="history" class="dropdown">
-                    <p><a href="./history.html">History</a></p>
-                    <div class="dropdownContent"><p><a href="./history.html">History of the 3<sup>rd</sup></a></p></div>
-                    <div class="dropdownContent"><p><a href="./movements.html">Historical Movements</a></p></div>
-                    <div class="dropdownContent"><p><a href="./organization.html">Organization</a></p></div>
+                <div class="dropdown" id="history">
+                    <p class="dropbtn"><a href="./history.html">History</a></p>
+                    <div class="dropdown-content">
+                        <a href="./history.html">History of the 3<sup>rd</sup></a>
+                        <a href="./movements.html">Historical Movements</a>
+                        <a href="./organization.html">Organization</a>
+                    </div>
                 </div>
                 <div id="contact">
                     <p><a href="./contact.html">Contact Us</a></p>
@@ -36,27 +41,27 @@
             </nav>
         </header>
         <section id="historicalPhotograps" class="pageContent">
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-1452-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-1731-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-2146-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-3033-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-3294-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-3506-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-4250-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-4286-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-4379-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-6235-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-6871-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-6940-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-7286-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-7545-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-7683-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-8645-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-9209-tn.jpg"></div>
-            <div class="galleryImage"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-9218-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-1452-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-1731-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-2146-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-3033-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-3294-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-3506-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-4250-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-4286-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-4379-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-6235-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-6871-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-6940-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-7286-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-7545-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-7683-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-8645-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-9209-tn.jpg"></div>
+            <div class="galleryImage" onClick="image()"><img src="./public/images/historicalPhotographs/1-gl-HistoryGallery-9218-tn.jpg"></div>
         </section>
         <footer>
-            <p>Copyright 2022 3<sup>rd</sup> Michigan</p>
+            <p>Copyright 2023 3<sup>rd</sup> Michigan</p>
             <p><a href="./contact.html">Send us a telegraph!</a></p>
         </footer>
     </main>

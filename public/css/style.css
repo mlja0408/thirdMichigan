@@ -1,6 +1,7 @@
 /*Shared Elements*/
 body {
-    background: #969696;
+    background: #C7BEBE;
+    font-family: 'Comic Helvetic Light', sans-serif;
 }
 h1 {
     text-align: center;
@@ -32,7 +33,7 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #969696;
+    background-color: #C7BEBE;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     z-index: 1;
@@ -50,12 +51,13 @@ header {
 }
 a {
     text-decoration: none;
+    color: #D70000;
 }
 a:hover {
     text-decoration: underline;
 }
 a:visited {
-    color: #0000FF;
+    color: #D70000;
 }
 .title {
     text-decoration: none;
@@ -95,19 +97,52 @@ footer {
     text-align: center;
 }
 /*enlist.html*/
-details {
-    padding: 0.25em 0;
-}
-summary {
+.collapsible {
+    background-color: #C7BEBE;
+    color: #000000;
     cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    font-family: 'Comic Helvetic Light', sans-serif;
 }
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+.content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+/*.collapsible:after {
+    content: '\02795';*/ /* Unicode character for "plus" sign (+) */
+    /*font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";*/ /* Unicode character for "minus" sign (-) */
+/*}*/
 /*movements.html*/
-/*#movements {
-    margin: auto;
-    text-align: center;
+/*a.movementsHeader {
+    display: block;
+    align-items: center;
+}
+.movementsHeader {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }*/
+#movements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 /*photographs.html*/
 #historicalPhotograps {
     display: grid;
