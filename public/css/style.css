@@ -1,10 +1,15 @@
 /*Shared Elements*/
+html {
+    font-family: sans-serif;
+}
 body {
-    background: #C7BEBE;
-    font-family: 'Comic Helvetic Light', sans-serif;
+    background: #E7DEDE;
 }
 h1 {
     text-align: center;
+}
+a.title:hover {
+    cursor: default;
 }
 nav {
     display: grid;
@@ -21,31 +26,26 @@ header {
     flex-direction: column;
     margin: auto;
     position: relative;
-    /*background: #AAAAAA;*/
-    /*border-radius: 5px;*/
 }
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #C7BEBE;
+    background-color: #E7DEDE;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     z-index: 1;
+    border-radius: 5px;
 }
-/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -85,6 +85,11 @@ html {
     font-family: "Comic Helvetic Heavy";
     src: url("./public/fonts/comic_helvetic/ComicHelvetic_Heavy.otf");
 }
+@media screen and (max-width: 640px) {
+    nav {
+        grid-template-columns: 1fr;
+    }
+}
 /*index.html*/
 #mainPageContent {
     display: grid;
@@ -92,13 +97,23 @@ html {
 }
 #frontPicture {
     z-index: 0;
+    width: 100%;
 }
 footer {
     text-align: center;
 }
+div.indexPhoto {
+    max-width: 610px;
+    max-height: 232px;
+}
+@media screen and (max-width: 1059px) {
+    #mainPageContent {
+        grid-template-columns: 1fr;
+    }
+}
 /*enlist.html*/
 .collapsible {
-    background-color: #C7BEBE;
+    background-color: #E7DEDE;
     color: #000000;
     cursor: pointer;
     padding: 18px;
@@ -107,37 +122,21 @@ footer {
     text-align: left;
     outline: none;
     font-size: 24px;
-    font-family: 'Comic Helvetic Light', sans-serif;
+    border-radius: 5px;
 }
 .active, .collapsible:hover {
-    background-color: #ccc;
+    background-color: #CCCCCC;
 }
 .content {
     padding: 18px;
-    background-color: white;
+    background-color: #E7DEDE;
     transition: max-height 0.2s ease-out;
     display: none;
-}
-/*.collapsible:after {
-    content: '\02795';*/ /* Unicode character for "plus" sign (+) */
-    /*font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2796";*/ /* Unicode character for "minus" sign (-) */
-/*}*/
-/*movements.html*/
-/*a.movementsHeader {
-    display: block;
-    align-items: center;
 }
 .movementsHeader {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}*/
+}
 #movements {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -155,4 +154,21 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
+}
+/*Both Galleries*/
+@media screen and (max-width: 640px) and (min-width: 480px) {
+    #historicalPhotograps {
+        grid-template-columns: 1fr 1fr;
+    }
+    #photoGallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 479px) {
+    #historicalPhotograps {
+        grid-template-columns: 1fr;
+    }
+    #photoGallery {
+        grid-template-columns: 1fr;
+    }
 }

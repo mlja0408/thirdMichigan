@@ -1,11 +1,11 @@
-//const images = document.querySelectorAll("img");
+window.addEventListener('DOMContentLoaded', function (event) {
+    const images = document.getElementsByClassName('galleryImage')
 
-//images.forEach(image => {
-//    image.addEventListener("click", event => {
-//        console.log("Image was clicked!");
-//    });
-//});
+    for (let i = 0; i < images.length; i++) {
+        images[i].addEventListener('click', handleClick);
+    }
+});
 
-function image() {
-    alert('Image clicked.')
+function handleClick() {
+    alert('Image Clicked')
 }
