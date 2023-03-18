@@ -25,7 +25,7 @@ try {
 			// image.classList.remove('selected');
 		}
 		const clickedImage = document.getElementById(this.id);
-        clickedImage.classList.add('selected');
+        clickedImage.classList.toggle('selected');
 
     }
 }
