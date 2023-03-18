@@ -52,6 +52,7 @@ header {
 a {
     text-decoration: none;
     color: #D70000;
+    /*font-weight: bold;*/
 }
 a:hover {
     text-decoration: underline;
@@ -85,7 +86,7 @@ html {
     font-family: "Comic Helvetic Heavy";
     src: url("./public/fonts/comic_helvetic/ComicHelvetic_Heavy.otf");
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
     nav {
         grid-template-columns: 1fr;
     }
@@ -133,14 +134,20 @@ div.indexPhoto {
     transition: max-height 0.2s ease-out;
     display: none;
 }
+/*movements.html*/
 .movementsHeader {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr;*/
 }
 #movements {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+ @media screen and (max-width: 639px) {
+     #movements {
+         grid-template-columns: 1fr;
+     }
+ }
 /*photographs.html*/
 #historicalPhotograps {
     display: grid;
@@ -159,16 +166,29 @@ div.indexPhoto {
 @media screen and (max-width: 640px) and (min-width: 480px) {
     #historicalPhotograps {
         grid-template-columns: 1fr 1fr;
+        justify-content: center;
     }
     #photoGallery {
         grid-template-columns: 1fr 1fr;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 479px) {
     #historicalPhotograps {
         grid-template-columns: 1fr;
+        justify-content: center;
     }
     #photoGallery {
         grid-template-columns: 1fr;
+        justify-content: center;
     }
+}
+.selected  {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selected > img {
+    height: 400px;
+    width: auto;
 }
