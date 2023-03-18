@@ -86,10 +86,39 @@ html {
     font-family: "Comic Helvetic Heavy";
     src: url("./public/fonts/comic_helvetic/ComicHelvetic_Heavy.otf");
 }
+#menuIcon {
+    height: 25px;
+    width: 25px;
+}
+
+#hamburger {
+    display: none;
+    text-align: right;
+    background-color: #E7DEDE;
+    border: none;
+    outline: none;
+    border-radius: 5%;
+    height: 30px;
+    width: 30px;
+}
 @media screen and (max-width: 639px) {
     nav {
+        display: none;
         grid-template-columns: 1fr;
     }
+    #hamburger {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    nav.active {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #E7DEDE;
+    }
+}
+#hamburger:hover {
+    background-color: #CCCCCC;
 }
 /*index.html*/
 #mainPageContent {
