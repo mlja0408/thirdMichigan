@@ -116,10 +116,13 @@ html {
         grid-template-columns: 1fr;
         background-color: #E7DEDE;
     }
+<<<<<<< HEAD
     #hamburgerContainer {
         display: flex;
         flex-direction: row-reverse;
     }
+=======
+>>>>>>> cf82610139ed7cc07051f359bd256e42a7c7d9da
 }
 #hamburger:hover {
     background-color: #CCCCCC;
