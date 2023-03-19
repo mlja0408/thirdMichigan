@@ -1,0 +1,47 @@
+#photoGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+#historicalPhotograps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 640px) and (min-width: 480px) {
+    #historicalPhotograps {
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    #photoGallery {
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #historicalPhotograps {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    #photoGallery {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
+
+.selected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .selected > img {
+        height: 400px;
+        width: auto;
+    }
+}

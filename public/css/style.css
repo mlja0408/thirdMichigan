@@ -177,10 +177,10 @@ html {
         display: none;
     }
     /*movements.html*/
-    .movementsHeader {
-        /*display: grid;
-    grid-template-columns: 1fr 1fr 1fr;*/
-    }
+    /* .movementsHeader {
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    } */
 
     #movements {
         display: grid;
@@ -192,21 +192,19 @@ html {
             grid-template-columns: 1fr;
         }
     }
-    /*photographs.html*/
-    #historicalPhotograps {
+    /*Both Galleries*/
+    #historicalPhotographs {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
         align-items: center;
+        justify-content: center;
     }
-    /*gallery.html*/
     #photoGallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
         align-items: center;
+        justify-content: center;
     }
-    /*Both Galleries*/
     @media screen and (max-width: 640px) and (min-width: 480px) {
         #historicalPhotograps {
             grid-template-columns: 1fr 1fr;
