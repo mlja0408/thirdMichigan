@@ -1,0 +1,10 @@
+#movements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 639px) {
+    #movements {
+        grid-template-columns: 1fr;
+    }
+} 

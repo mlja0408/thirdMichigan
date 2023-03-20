@@ -1,0 +1,18 @@
+#mainPageContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#frontPicture {
+    z-index: 0;
+    width: 100%;
+}
+div.indexPhoto {
+    max-width: 610px;
+    max-height: 232px;
+}
+@media screen and (max-width: 1059px) {
+    #mainPageContent {
+        grid-template-columns: 1fr;
+    }
+}
