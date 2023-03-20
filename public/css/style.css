@@ -1,6 +1,6 @@
 /*Shared Elements*/
 html {
-    font-family: sans-serif;
+    font-family: "Arimo", sans-serif;
 }
 body {
     background: #E7DEDE;
@@ -76,15 +76,23 @@ html {
 }
 @font-face {
     font-family: "Comic Helvetic Light";
-    src: url("./public/fonts/comic_helvetic/ComicHelvetic_Light.otf");
+    src: url("/public/fonts/comic_helvetic/ComicHelvetic_Light.otf");
 }
 @font-face {
     font-family: "Comic Helvetic Medium";
-    src: url("./public/fonts/comic_helvetic/ComicHelvetic_Medium.otf");
+    src: url("/public/fonts/comic_helvetic/ComicHelvetic_Medium.otf");
 }
 @font-face {
     font-family: "Comic Helvetic Heavy";
-    src: url("./public/fonts/comic_helvetic/ComicHelvetic_Heavy.otf");
+    src: url("/public/fonts/comic_helvetic/ComicHelvetic_Heavy.otf");
+}
+@font-face {
+    font-family: "Arimo";
+    src: url("public/fonts/Arimo/Arimo-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Arimo-Italic";
+    src: url("public/fonts/Arimo/Arimo-Italic-VariableFont_wght.ttf");
 }
 #menuIcon {
     height: 25px;
