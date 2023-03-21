@@ -1,4 +1,28 @@
 /*Shared Elements*/
+@font-face {
+    font-family: "Comic Helvetic Light";
+    src: url("/public/fonts/comic_helvetic/ComicHelvetic_Light.otf");
+}
+
+@font-face {
+    font-family: "Comic Helvetic Medium";
+    src: url("/public/fonts/comic_helvetic/ComicHelvetic_Medium.otf");
+}
+
+@font-face {
+    font-family: "Comic Helvetic Heavy";
+    src: url("/public/fonts/comic_helvetic/ComicHelvetic_Heavy.otf");
+}
+
+@font-face {
+    font-family: "Arimo";
+    src: url("public/fonts/Arimo/Arimo-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Arimo-Italic";
+    src: url("public/fonts/Arimo/Arimo-Italic-VariableFont_wght.ttf");
+}
 html {
     font-family: "Arimo", sans-serif;
 }
@@ -73,26 +97,6 @@ a:visited {
 html {
     overflow-x: hidden;
     margin-right: calc(-1 * (100vw - 100%));
-}
-@font-face {
-    font-family: "Comic Helvetic Light";
-    src: url("/public/fonts/comic_helvetic/ComicHelvetic_Light.otf");
-}
-@font-face {
-    font-family: "Comic Helvetic Medium";
-    src: url("/public/fonts/comic_helvetic/ComicHelvetic_Medium.otf");
-}
-@font-face {
-    font-family: "Comic Helvetic Heavy";
-    src: url("/public/fonts/comic_helvetic/ComicHelvetic_Heavy.otf");
-}
-@font-face {
-    font-family: "Arimo";
-    src: url("public/fonts/Arimo/Arimo-VariableFont_wght.ttf");
-}
-@font-face {
-    font-family: "Arimo-Italic";
-    src: url("public/fonts/Arimo/Arimo-Italic-VariableFont_wght.ttf");
 }
 #menuIcon {
     height: 25px;
