@@ -3,12 +3,18 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
+    justify-items: center;
 }
 #historicalPhotograps {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
+    justify-items: center;
+}
+.galleryImage {
+    max-width: 300px;
+    max-height: 300px;
 }
 @media screen and (max-width: 640px) and (min-width: 480px) {
     #historicalPhotograps {
@@ -34,7 +40,7 @@
     }
 }
 
-.selected {
+/*.selected {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,3 +50,4 @@
         height: 400px;
         width: auto;
     }
+*/
